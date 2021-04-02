@@ -75,4 +75,4 @@ app.get('/', (req, res) => {
   res.send('hello everyOne')
 })
 
-app.listen(port, () => console.log('listening to port 5050'))
+app.listen(process.env.PORT || port, () => console.log('listening to port 5050'))
